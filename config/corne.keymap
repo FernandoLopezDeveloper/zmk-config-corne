@@ -12,12 +12,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer { // Layer 0
-// -----------------------------------------------------------------------------------------
-// |      |  V  |  M  |  L  |  Y  |  P  |      |  X  |  F   |  O  |  U  |  J  |      |
-// |&tog 1|  S  |  T  |  R  |  C  |  D  |      |  ^  |  N   |  A  |  E  |  I  |  `   |
-// |&tog 2|  Z  |  X  |  Q  |  G  |  W  |      |  B  |  H   |  ←  |  ↓  |  ↑  |  →   |
-//                    |     | repeat | SPC |   | ENT | BSPC |     |
+                default_layer {
                         bindings = <
    &trans     &kp V &kp M &kp L &kp Y &kp P   &kp X &kp F &kp O &kp U &kp J &trans
    &tog 1     &mt LGUI S &mt LALT T &mt LSHFT R &kp C &mt LCTRL D   &kp CARET &mt LCTRL N &mt LSHFT A &mt LALT E &mt LGUI I &kp GRAVE
@@ -25,12 +20,7 @@
                   &trans &key_repeat &kp SPACE   &kp RET &kp BSPC &trans
                         >;
                 };
-                symbol_layer { // Layer 1
-// -----------------------------------------------------------------------------------------
-// |  1   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-// |  `   |  {  |  [  |  (  |  <  |  |  |   |  -  |  >  |  )  |  ]  |  }  |  \   |
-// | ADJ  |  '  |  "  |  +  |  _  |  ?  |   |  /  |  =  |  :  |  ;  |  .  |  ~   |
-//                    | NAV | REP | SPC |   | ENT | BSPC| SYM |
+                symbol_layer {
                         bindings = <
    &kp N1    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &trans
    &kp GRAVE &kp LBRC &kp LBKT &kp LPAR &kp LT &kp PIPE   &kp MINUS &kp GT &kp RPAR &kp RBKT &kp RBRC &kp BSLH
@@ -39,19 +29,13 @@
                         >;
                 };
 
-                lower_layer { // Layer 2
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+                lower_layer {
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &to 0   &kp RALT
                         >;
-                };
-                
-        }
-}
+                }; 
+        };
+};
