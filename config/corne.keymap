@@ -32,7 +32,7 @@
 // | ADJ  |  '  |  "  |  +  |  _  |  ?  |   |  /  |  =  |  :  |  ;  |  .  |  ~   |
 //                    | NAV | REP | SPC |   | ENT | BSPC| SYM |
                         bindings = <
-   &kp N1    &kp EXCL &kp AT &kp HASH &kp DLR &kp PRCNT   &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &trans
+   &kp N1    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &trans
    &kp GRAVE &kp LBRC &kp LBKT &kp LPAR &kp LT &kp PIPE   &kp MINUS &kp GT &kp RPAR &kp RBKT &kp RBRC &kp BSLH
    &tog 2    &kp SQT &kp DQT &kp PLUS &kp UNDER &kp QMARK &kp FSLH &kp EQUAL &kp COLON &kp SEMI &kp DOT &kp TILDE
                   &tog 1 &key_repeat &kp SPACE   &kp RET &kp BSPC &tog 1
