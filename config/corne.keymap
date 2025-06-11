@@ -33,8 +33,8 @@
                 number_layer {
                         bindings = <
    &trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &trans     
-   &trans    &mkp LBTN &mkp RBTN &mkp MBTN &mkp MBTN2 &mkp MBTN3 &trans    &mwh_up   &mwh_down &mwh_left &mwh_right &trans
-   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+   &trans    &mkp LBTN &mkp RBTN &mkp MBTN &kp PG_DN &kp PG_UP &trans    &mmv LEFT &mmv RIGHT &mmv DOWN &mmv UP    &trans
+   &trans    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp C_PP &trans    &trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans
                   &trans &trans &trans   &trans &trans &trans
                         >;
                 };
